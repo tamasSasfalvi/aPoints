@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- COMMON -->
+    <string name="no_data">Nincs adat</string>
+    <string name="cancel">Mégse</string>
+    <string name="select_app">Válasszon egy alkalmazást</string>
+    <string name="image">Kép</string>
+    <string name="loading">Betöltés&#8230;</string>
+    <string name="yes">Igen</string>
+    <string name="no">Nem</string>
+    <string name="save">Mentés</string>
+    <string name="dont_save">Ne ments</string>
+    <string name="longitude">Hosszúság</string>
+    <string name="latitude">"Szélesség"</string>
+
+    <!-- ACTIVITY -->
+    <!-- OPEN -->
+    <string name="open_retry">Újra</string>
+    <string name="open_last_mod">Utolsó módosítás</string>
+
+    <!-- NEW PROJECT -->
+    <string name="project_name">Projekt neve</string>
+    <string name="description">Leírás</string>
+    <string name="create_project_button">Létrehoz</string>
+    <string name="team">Csapat</string>
+
+    <!-- GCP EDITOR -->
+    <string name="altitude">Magasság</string>
+    <string name="gcp_editor_name">Név</string>
+    <string name="placemark">ALAPADATOK</string>
+    <string name="coordinates">KOORDINÁTÁK</string>
+    <string name="done">Kész</string>
+    <string name="gps">GPS</string>
+    <string name="accuracy">Pontosság</string>
+    <string name="received">Érkezett</string>
+    <string name="extra">EGYÉB</string>
+    <string name="add_img">Kép hozzáadása</string>
+
+    <!-- PROJECT -->
+    <string name="tracker_start">Új nyomvonal</string>
+    <string name="tracker_pause">Szünet</string>
+    <string name="tracker_stop">Nyomvonal kész</string>
+    <string name="tracker_resume">Folytatás</string>
+    <!-- ACTIVITY -->
+    
+    <!-- TRACKER -->
+    <string name="cache_write_postponed">Cache kiírása elhalasztva</string>
+
+
+    <!-- TITLES -->
+    <string name="app_name">aPoints</string>
+    <string name="title_open">Projekt megnyitása</string>
+    <string name="title_new_project">Pojekt létrehozása</string>
+    <string name="title_activity_new_gcp">GCP hozzáadása</string>
+    <string name="title_activity_edit_gcp">GCP szerkesztése</string>
+
+    <!-- MENU -->
+    <!-- COMMON -->
+    <string name="menu_new_project">Projekt létrehozása</string>
+    <!-- COMMON -->
+    <!-- PROJECT -->
+    <string name="menu_open_project">Projekt megnyitás</string>
+    <string name="menu_open_kml">KML Megnyitása</string>
+    <string name="share">Megosztás</string>
+    <!-- ACTIONBAR -->
+    <string name="menu_add">GCP Hozzáadása</string>
+    <!-- ACTIONBAR -->
+    <!-- PROJECT -->
+    <!-- MENU -->
+
+
+    <!-- CONTEXT MENU -->
+    <string name="context_open">Megnyitás</string>
+    <string name="context_delete">Törlés</string>
+
+    <!-- DIALOGS -->
+    <!-- EXTERNAL STORAGE NOT FOUND -->
+    <string name="dialog_ext_stor_title">Külső tároló nem található</string>
+    <string name="dialog_ext_stor_message">A külső tároló nem érhető el.\nTalán csatlakoztatva van egy számítógéphez&#8230;</string>
+    <string name="gps_disabled_title">Gps ki van kapcsolva</string>
+    <string name="gps_disabled_message">A funkciónak szüksége van a GPS-re</string>
+    <string name="missing_data_title">Hiányzó adat</string>
+    <string name="missing_data_message_name">Adj meg egy nevet légy szíves!</string>
+    <string name="overwrite_title">Már létezik egy ilyen nevű projekt!</string>
+    <string name="overwrite_message">Felül szeretnéd írni?</string>
+    <string name="exit_sure_title">Biztos ki akarsz lépni?</string>
+    <string name="exit_sure_message">A nyomvonalrögzítés le fog állni</string>
+    <string name="not_saved_title">Nem sikerült elmenteni a projektet</string>
+    <string name="not_saved_message">Valószínűleg megsérült a projekt</string>
+    <string name="tracklog_name_title">Mi legyen a tracklog neve?</string>
+    <string name="tracklog_name_message">Ez a név fog megjelenni a térképen</string>
+    <!-- DIALOGS -->
+
+</resources>

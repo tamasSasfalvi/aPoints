@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/gcp_editor_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".GcpEditor" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/add_img"
+                    android:layout_width="@dimen/gpsFill_and_img_width"
+                    android:layout_height="@dimen/gpsFill_and_img_width"
+                    android:contentDescription="@string/add_img"
+                    android:onClick="onAddImg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_img" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- GROUP TITLE -->
+
+        <TextView
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/placemark" />
+
+        <include layout="@layout/separator" />
+
+        <TextView
+            style="@style/EditText_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gcp_editor_name" />
+
+        <EditText
+            android:id="@+id/gcp_editor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/gcp_editor_name"
+            android:inputType="textCapWords"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <!-- GROUP TITLE -->
+        <!-- Nem helyettesítjük compound-al mert egyelőre nincs eseménykezelő-hozzáadási lehetőség a drawable-höz -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/coordinates" />
+
+            <view
+                android:id="@+id/gcp_editor_gps_fill_button"
+                android:layout_width="@dimen/gpsFill_and_img_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                class="hu.gdf.terepimeres.activity.gcpEditor.GpsFillButton"
+                android:onClick="onGpsFill"
+                android:textOff="@string/gps"
+                android:textOn="@string/gps" />
+        </RelativeLayout>
+
+        <include layout="@layout/separator" />
+
+        <TextView
+            style="@style/EditText_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/longitude" />
+
+        <EditText
+            android:id="@+id/gcp_editor_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/no_data"
+            android:inputType="numberDecimal"
+            android:singleLine="true" >
+        </EditText>
+
+        <TextView
+            style="@style/EditText_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/latitude" />
+
+        <EditText
+            android:id="@+id/gcp_editor_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/no_data"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/EditText_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/altitude" />
+
+        <EditText
+            android:id="@+id/gcp_editor_altitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/no_data"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+        <!-- GROUP TITLE -->
+
+        <TextView
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/extra" />
+
+        <include layout="@layout/separator" />
+
+        <TextView
+            style="@style/EditText_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accuracy" />
+
+        <EditText
+            android:id="@+id/gcp_editor_accuracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/no_data"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/EditText_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/received" />
+
+        <EditText
+            android:id="@+id/gcp_editor_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/no_data" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onDone"
+            android:text="@string/done" />
+    </LinearLayout>
+
+</ScrollView>

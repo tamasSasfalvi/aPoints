@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- DROPDOWN -->
+    <item
+        android:id="@+id/action_new_project"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/menu_new_project"/>
+    <item
+        android:id="@+id/action_open_project"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/menu_open_project"/>
+    <item
+        android:id="@+id/open_kml"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="@string/menu_open_kml"/>
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="6"
+        android:showAsAction="never"
+        android:title="@string/share"/>
+    <!-- DROPDOWN -->
+
+    <!-- ACTIONBAR -->
+    <item android:id="@+id/action_add"
+        android:icon="@drawable/add_gcp"
+        android:title="@string/menu_add"
+        android:enabled="false"
+        android:showAsAction="ifRoom"/>
+    <!-- ACTIONBAR -->
+</menu>

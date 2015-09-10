@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hu.gdf.terepimeres"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:launchMode="singleTask" >
+        <activity
+            android:name="hu.gdf.terepimeres.activity.project.Project"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hu.gdf.terepimeres.activity.Open"
+            android:label="@string/title_open"
+            android:parentActivityName="hu.gdf.terepimeres.activity.project.Projectject.Project"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="hu.gdf.terepimeres.activity.NewProject"
+            android:label="@string/title_new_project"
+            android:parentActivityName="hu.gdf.terepimeres.activity.project.Project"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="hu.gdf.terepimeres.activity.gcpEditor.GcpEditor"
+            android:label="@string/title_activity_new_gcp"
+            android:parentActivityName="hu.gdf.terepimeres.activity.project.Project"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <service android:name="hu.gdf.terepimeres.service.Tracker"></service>
+    </application>
+
+</manifest>
